@@ -333,6 +333,31 @@ p:last-child {
     align-items: center;
 }
 
+.hero-collab-logos {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    animation: fadeInDown 0.6s ease forwards;
+}
+
+.collab-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.collab-logo--partner {
+    height: 60px;
+}
+
+.collab-x {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    opacity: 0.5;
+}
+
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -1523,6 +1548,19 @@ html[dir="ltr"] .ar-content {
 
     .hero {
         padding: var(--space-3xl) 0;
+    }
+
+    .hero-collab-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .collab-logo {
+        height: 35px;
+    }
+
+    .collab-logo--partner {
+        height: 45px;
     }
 
     .hero-badge {
