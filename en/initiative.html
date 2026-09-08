@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAE Women's Initiative | Al Omran Training & Development Center</title>
+    <meta name="description" content="Empowering Emirati women through education, skills development, and professional growth opportunities.">
+    <meta property="og:title" content="UAE Women's Initiative | Al Omran Training & Development Center">
+    <meta property="og:description" content="Empowering Emirati women through education, skills development, and professional growth opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_AE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Al Omran Training & Development Center">
+                <img src="../assets/omran-full-logo.png" alt="Al Omran Training & Development Center" width="240" height="60">
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="branches.html" class="nav-link">Branches</a></li>
+                    <li><a href="initiative.html" class="nav-link nav-link--active">Women's Initiative</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
+                    <li><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
+                </ul>
+                <a href="../initiative.html" class="lang-switch">العربية</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================
+             HERO
+        ========================================= -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-collab-logos">
+                        <img src="../assets/omran-full-logo.png" alt="Al Omran Training & Development Center" class="collab-logo" width="180" height="45">
+                        <span class="collab-x">×</span>
+                        <img src="../assets/ewd-logo.png" alt="Emirati Women's Development Alliance" class="collab-logo collab-logo--partner" width="60" height="60">
+                    </div>
+                    <div class="hero-badge">
+                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span>Empowering Emirati Women</span>
+                    </div>
+                    <h1 class="hero-title">UAE Women's Initiative</h1>
+                    <p class="hero-subtitle">Empowering Women Through Education and Professional Development</p>
+                    <div class="hero-copy">
+                        <p>The UAE Women's Initiative is a landmark program by Al Omran Training & Development Center dedicated to empowering Emirati women through education, skills development, and professional growth opportunities. Launched as part of the UAE's vision for gender equality and women's empowerment, this initiative provides specialized training programs designed exclusively for women across various professional fields.</p>
+                        <p class="hero-statement">Because empowering women begins with education, and because the ambition of Emirati women deserves to be supported.</p>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#apply" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <img src="../assets/emirati-woman.jpg.jpeg" alt="Emirati woman in an educational environment" loading="eager" width="800" height="600">
+                    </div>
+                    <div class="hero-image-badge">
+                        <span class="badge-number">500</span>
+                        <span class="badge-text">Training Opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             VIDEO SECTION
+        ========================================= -->
+        <section class="video-section">
+            <div class="container">
+                <div class="video-wrapper">
+                    <video autoplay muted loop playsinline id="heroVideo" width="1280" height="720">
+                        <source src="../assets/hero-video.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <button class="video-sound-btn" id="soundToggle" aria-label="Toggle sound">
+                        <svg class="icon-sound-on" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                        <svg class="icon-sound-off" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <line x1="23" y1="9" x2="17" y2="15"></line>
+                            <line x1="17" y1="9" x2="23" y2="15"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CAMPAIGN STATISTICS
+        ========================================= -->
+        <section class="statistics" id="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">5,000,000</div>
+                        <div class="stat-label">AED Initiative Value</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">500</div>
+                        <div class="stat-label">Emirati Women</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">Full Year</div>
+                        <div class="stat-label">Of Education</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">No Fees</div>
+                        <div class="stat-label">English Language Study</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ABOUT THE INITIATIVE
+        ========================================= -->
+        <section class="features" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About the Initiative</h2>
+                    <p class="section-subtitle">Empowering Emirati Women Through Education and Professional Development</p>
+                    <p class="section-intro">The UAE Women's Initiative is a landmark program dedicated to empowering Emirati women through education, skills development, and professional growth opportunities.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Full Academic Year</h3>
+                        <p class="feature-text">A full academic year to learn and develop English language skills with professional instructors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Stronger Communication Skills</h3>
+                        <p class="feature-text">Develop communication skills through training in conversation, listening, reading, and writing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">In-Person Learning</h3>
+                        <p class="feature-text">Study in person at any of Al Omran Training & Development Center branches across the UAE.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">No Tuition Fees</h3>
+                        <p class="feature-text">The initiative covers the full cost of the educational program for accepted beneficiaries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             KEY OBJECTIVES
+        ========================================= -->
+        <section class="why" id="objectives">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Key Objectives</h2>
+                </div>
+                <div class="why-content">
+                    <div class="why-text">
+                        <p>We at Al Omran believe that the truest investment is the investment in people.</p>
+                        <p>Emirati women have always been, and continue to be, essential partners in the development and success journey of the UAE.</p>
+                        <p>Therefore, we launched this initiative to provide accessible professional training, support career advancement and leadership development, create networking opportunities among professional women, and contribute to the UAE's vision for gender balance in the workforce.</p>
+                    </div>
+                    <div class="why-stats">
+                        <div class="why-stat">
+                            <div class="why-stat-number">AED 5 Million</div>
+                            <div class="why-stat-label">In Education</div>
+                        </div>
+                        <div class="why-stat">
+                            <div class="why-stat-number">500 Opportunities</div>
+                            <div class="why-stat-label">Real Educational Chances</div>
+                        </div>
+                        <div class="why-stat">
+                            <div class="why-stat-number">500 Success Stories</div>
+                            <div class="why-stat-label">Potential</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PROGRAMS OFFERED
+        ========================================= -->
+        <section class="features" id="programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Programs Offered</h2>
+                    <p class="section-intro">Specialized training programs designed exclusively for women across various professional fields.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Leadership & Management Skills</h3>
+                        <p class="feature-text">Develop essential leadership capabilities and management techniques for the modern workplace.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Digital Literacy & Technology</h3>
+                        <p class="feature-text">Gain essential digital skills to thrive in today's technology-driven world.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Entrepreneurship & Business Skills</h3>
+                        <p class="feature-text">Learn how to start and grow your own business with practical entrepreneurship training.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Communication & Public Speaking</h3>
+                        <p class="feature-text">Master effective communication and public speaking techniques to express yourself with confidence.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Financial Literacy</h3>
+                        <p class="feature-text">Build financial awareness and money management skills for personal and professional growth.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Career Development Workshops</h3>
+                        <p class="feature-text">Practical workshops focused on career planning, resume building, and interview preparation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SUCCESS STORIES
+        ========================================= -->
+        <section class="statistics" id="success-stories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-intro">Hear from women who have completed the program and transformed their careers.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="stat-number" style="font-size: 1.1rem;">Fatima Al Mansouri</div>
+                        <div class="stat-label">"The program gave me the confidence to lead a team of 20 at my workplace. I never imagined I could speak English so fluently."</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="stat-number" style="font-size: 1.1rem;">Mariam Al Hashimi</div>
+                        <div class="stat-label">"Thanks to this initiative, I launched my own business and now communicate with international clients every day."</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="stat-number" style="font-size: 1.1rem;">Noura Al Suwaidi</div>
+                        <div class="stat-label">"This free year of English learning completely changed my career path. I was promoted to a senior position within six months of completing the program."</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PARTNERS & COLLABORATORS
+        ========================================= -->
+        <section class="why" id="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Partners & Collaborators</h2>
+                    <p class="section-intro">We collaborate with leading government and private organizations to maximize the impact of this initiative.</p>
+                </div>
+                <div class="why-content">
+                    <div class="why-text">
+                        <p><strong>Ministry of Human Resources and Emiratisation</strong> — Supporting workforce development and Emiratisation goals.</p>
+                        <p><strong>Abu Dhabi Department of Education and Knowledge</strong> — Advancing education and training standards in the capital.</p>
+                        <p><strong>Dubai Foundation for Women and Development</strong> — Empowering women through sustainable development programs.</p>
+                        <p><strong>Sharjah Business Women Council</strong> — Fostering entrepreneurship and professional growth for women.</p>
+                    </div>
+                    <div class="why-stats">
+                        <div class="why-stat">
+                            <div class="why-stat-number">4</div>
+                            <div class="why-stat-label">Key Partners</div>
+                        </div>
+                        <div class="why-stat">
+                            <div class="why-stat-number">7</div>
+                            <div class="why-stat-label">Emirates Covered</div>
+                        </div>
+                        <div class="why-stat">
+                            <div class="why-stat-number">15+</div>
+                            <div class="why-stat-label">Training Centers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             WHO CAN APPLY
+        ========================================= -->
+        <section class="requirements" id="requirements">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Who Can Apply?</h2>
+                    <p class="section-intro">The initiative is dedicated to Emirati women who meet the following criteria:</p>
+                </div>
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <p>The applicant must be an Emirati woman.</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <p>Must be 18 years of age or older.</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <p>Must be available for 1.5 hours, three days per week.</p>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <p>Must be committed to attending and participating throughout the program duration.</p>
+                    </div>
+                </div>
+                <div class="requirements-cta">
+                    <p>If you are ready to invest time in yourself and develop your future, this opportunity is for you.</p>
+                    <a href="#apply" class="btn btn-primary">Apply for the Initiative</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SELECTION PROCESS
+        ========================================= -->
+        <section class="selection" id="selection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How Are Beneficiaries Selected?</h2>
+                    <p class="section-intro">To ensure maximum impact, not all applications will be accepted automatically.<br>After receiving applications, beneficiaries will be selected based on:</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Meeting Initiative Criteria</h3>
+                            <p>Verification that the applicant meets all required conditions.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Application Priority</h3>
+                            <p>Application priority is taken into account within the beneficiary selection process.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Nominations from Supporting Organizations</h3>
+                            <p>The target number will be completed through nominations from government organizations supporting women across various emirates, following the approved coordination and nomination process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-highlight">
+                    <p>Ultimate Goal: Reaching 500 Emirati women and providing them with a real opportunity to develop their English language skills for a full year.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             STUDY LOCATIONS
+        ========================================= -->
+        <section class="locations" id="locations">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Where Will Studies Take Place?</h2>
+                    <p class="section-intro">Studies are available through Al Omran Training & Development Center branches across all emirates of the United Arab Emirates.</p>
+                    <p class="section-intro">When applying, you can choose the emirate and branch most suitable for you, and accepted applicants will be contacted to complete the registration process and program details.</p>
+                </div>
+                <div class="emirates-grid">
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Abu Dhabi</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Dubai</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Sharjah</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Ajman</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Umm Al Quwain</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Ras Al Khaimah</span>
+                    </div>
+                    <div class="emirate-chip">
+                        <svg class="chip-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Fujairah</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             EMOTIONAL CTA
+        ========================================= -->
+        <section class="emotional-cta" id="emotional-cta">
+            <div class="container">
+                <div class="emotional-content">
+                    <h2 class="emotional-title">Are You Ready to Begin?</h2>
+                    <div class="emotional-text">
+                        <p>Perhaps 1.5 hours, three days a week, is the time you invest today, but the skill you gain may accompany you for years to come.</p>
+                        <p>We don't promise that English will change your life in one day.</p>
+                        <p class="emotional-highlight">But we promise you a real opportunity to start the change.</p>
+                    </div>
+                    <a href="#apply" class="btn btn-primary btn-large">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             APPLICATION FORM
+        ========================================= -->
+        <section class="application-form" id="apply">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Submit Your Application</h2>
+                    <p class="section-header__subtitle">Fill in the details below and our team will get in touch</p>
+                </div>
+                <form class="application-form__form" id="applicationForm" action="#" method="post">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="fullName" class="form-field__label">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="form-field__input" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="emiratesId" class="form-field__label">Emirates ID Number</label>
+                            <input type="text" id="emiratesId" name="emiratesId" class="form-field__input" required pattern="[0-9]{7,}" inputmode="numeric">
+                        </div>
+                        <div class="form-field">
+                            <label for="phone" class="form-field__label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-field__input" required autocomplete="tel" dir="ltr">
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="form-field__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-field__input" required autocomplete="email" dir="ltr">
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="branch" class="form-field__label">Preferred Branch</label>
+                            <select id="branch" name="branch" class="form-field__select" required>
+                                <option value="" disabled selected>Select Branch</option>
+                                <optgroup label="Al Ain">
+                                    <option value="City Center - Al Ain">City Center</option>
+                                    <option value="Al Jimi Mall - Al Ain">Al Jimi Mall</option>
+                                    <option value="Makani Mall Zakher - Al Ain">Makani Mall Zakher</option>
+                                    <option value="Al Barari Mall - Al Ain">Al Barari Mall</option>
+                                    <option value="Al Foah Mall - Al Ain">Al Foah Mall</option>
+                                </optgroup>
+                                <optgroup label="Abu Dhabi">
+                                    <option value="Mazeed Mall - Abu Dhabi">Mazeed Mall</option>
+                                    <option value="Al Muror Road - Abu Dhabi">Al Muror Road</option>
+                                </optgroup>
+                                <optgroup label="Dubai">
+                                    <option value="Al Qusais - Dubai">Al Qusais</option>
+                                    <option value="Al Barsha - Dubai">Al Barsha</option>
+                                </optgroup>
+                                <optgroup label="Sharjah">
+                                    <option value="Central Mall - Sharjah">Central Mall</option>
+                                </optgroup>
+                                <optgroup label="Ras Al Khaimah">
+                                    <option value="RAK Mall - Ras Al Khaimah">RAK Mall</option>
+                                </optgroup>
+                                <optgroup label="Fujairah">
+                                    <option value="Al Awadi Tower - Fujairah">Al Awadi Tower</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="englishLevel" class="form-field__label">What is your current English level?</label>
+                            <select id="englishLevel" name="englishLevel" class="form-field__select" required>
+                                <option value="" disabled selected>Select level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="good">Good</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="unknown">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="reason" class="form-field__label">Why do you want to participate in the initiative?</label>
+                            <textarea id="reason" name="reason" class="form-field__textarea" rows="4" required></textarea>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label">Can you commit to 1.5 hours, three days per week?</label>
+                            <div class="form-field__radio-group">
+                                <label class="form-field__radio"><input type="radio" name="timeCommitment" value="yes" required><span class="form-field__radio-mark"></span><span>Yes</span></label>
+                                <label class="form-field__radio"><input type="radio" name="timeCommitment" value="no"><span class="form-field__radio-mark"></span><span>No</span></label>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field__label">Are you ready to commit to attending throughout the program?</label>
+                            <div class="form-field__radio-group">
+                                <label class="form-field__radio"><input type="radio" name="fullProgram" value="yes" required><span class="form-field__radio-mark"></span><span>Yes</span></label>
+                                <label class="form-field__radio"><input type="radio" name="fullProgram" value="no"><span class="form-field__radio-mark"></span><span>No</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset class="form-confirmations">
+                        <div class="form-confirmation">
+                            <label class="form-field__checkbox">
+                                <input type="checkbox" name="confirm1" required>
+                                <span class="form-field__checkbox-mark"></span>
+                                <span>I confirm that I am an Emirati woman aged 18 or above, and that the information provided is accurate.</span>
+                            </label>
+                        </div>
+                        <div class="form-confirmation">
+                            <label class="form-field__checkbox">
+                                <input type="checkbox" name="confirm2" required>
+                                <span class="form-field__checkbox-mark"></span>
+                                <span>I agree to the terms and conditions of the initiative and the beneficiary selection process.</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Application</button>
+                    </div>
+                </form>
+                <div class="success-state" id="successState" hidden>
+                    <div class="success-state__icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="#406AB3" stroke-width="2"></circle><path d="M14 24l7 7 13-13" stroke="#406AB3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h3 class="success-state__title">After Submission</h3>
+                    <p class="success-state__text">Thank you for your interest in the initiative.</p>
+                    <p class="success-state__text">The Al Omran team will review applications according to the initiative's criteria and the approved selection process.</p>
+                    <p class="success-state__text">If you meet the criteria and are nominated, our team will contact you to complete the admission and registration process.</p>
+                    <p class="success-state__text success-state__text--note">Please note that submitting an application does not guarantee acceptance into the initiative, as seats are limited to 500 beneficiaries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FINAL BRAND STATEMENT
+        ========================================= -->
+        <section class="final-statement">
+            <div class="container">
+                <div class="statement-content">
+                    <div class="statement-amount">AED 5,000,000</div>
+                    <h2 class="statement-heading">Investment in People, Celebrating Emirati Women</h2>
+                    <div class="statement-brand">
+                        <img src="../assets/omran-full-logo.png" alt="Al Omran Training & Development Center" width="240" height="60">
+                        <p class="statement-name">Al Omran Training & Development Center</p>
+                    </div>
+                    <p class="statement-text">We believe that education gives you not just a skill, but a new opportunity.</p>
+                    <a href="#apply" class="btn btn-primary">Apply Now</a>
+                </div>
+                <div class="statement-decoration" aria-hidden="true">
+                    <div class="decoration-circle decoration-blue"></div>
+                    <div class="decoration-circle decoration-green"></div>
+                    <div class="decoration-circle decoration-orange"></div>
+                    <div class="decoration-circle decoration-yellow"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/omran-full-logo.png" alt="Al Omran Training & Development Center" width="240" height="60">
+                    <p class="footer-name">Al Omran Training & Development Center</p>
+                    <p class="footer-tagline">Building Tomorrow's Leaders Since 2010</p>
+                    <div class="footer-contact">
+                        <a href="tel:+971505829697" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +971505829697
+                        </a>
+                        <a href="mailto:alomran.td@gmail.com" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            alomran.td@gmail.com
+                        </a>
+                        <p class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            Saturday - Thursday: 8:00 AM - 8:00 PM
+                        </p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/alomran.td/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://www.instagram.com/alomran.td/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://www.tiktok.com/@alomran.td" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9a6.34 6.34 0 1 0 5.45 6.28V9.13a8.16 8.16 0 0 0 4.77 1.52V7.2a4.85 4.85 0 0 1-.7-.51z"/></svg></a>
+                        <a href="https://wa.me/971505829697" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Our Initiatives">
+                    <h4 class="footer-nav-title">Our Initiatives</h4>
+                    <ul class="footer-links">
+                        <li><a href="initiative.html">UAE Women's Initiative</a></li>
+                        <li><a href="courses.html">Training Courses</a></li>
+                        <li><a href="branches.html">Our Branches</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Quick Links">
+                    <h4 class="footer-nav-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Omran Training & Development Center. All rights reserved.</p>
+                <p class="footer-made-in">Made with ❤️ in the United Arab Emirates</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/971505829697?text=Hello, I'd like to inquire about training courses" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp" id="whatsapp-float-btn">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- WHATSAPP CHAT WIDGET -->
+    <div class="joinchat__chatbox" id="joinchat-widget" role="dialog" aria-labelledby="joinchat__label" aria-modal="true">
+        <div class="joinchat__header">
+            <div class="joinchat__header-content">
+                <div class="joinchat__avatar">
+                    <img src="../assets/omran-logo-small.png" alt="Al Omran" width="40" height="40">
+                </div>
+                <div id="joinchat__label">
+                    <span class="joinchat__title">Al Omran Training</span>
+                    <p class="joinchat__bubble-name">Al Omran Training Center</p>
+                    <p class="joinchat__bubble-text">Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <button class="joinchat__close" type="button" aria-label="Close"></button>
+        </div>
+        <div class="joinchat__scroll">
+            <div class="joinchat__content">
+                <div class="joinchat__chat">
+                    <div class="joinchat__bubble">
+                        <p class="joinchat__bubble-name">Al Omran Training Center</p>
+                        <p class="joinchat__bubble-text">Hello! How can I help you today?</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/971505829697?text=Hello, I'd like to inquire about training courses" class="joinchat__open" target="_blank" rel="noopener">
+                    <div class="joinchat__open__text">Start Chat</div>
+                    <svg class="joinchat__open__icon" width="44" height="44" viewBox="0 0 400 400">
+                        <path class="joinchat__pa" d="M168.83 200.504H79.218L33.04 44.284a1 1 0 0 1 1.386-1.188L365.083 199.04a1 1 0 0 1 .003 1.808L34.432 357.903a1 1 0 0 1-1.388-1.187l29.42-99.427"></path>
+                        <path class="joinchat__pb" d="M318.087 318.087c-52.982 52.982-132.708 62.922-195.725 29.82l-80.449 10.18 10.358-80.112C18.956 214.905 28.836 134.99 81.913 81.913c65.218-65.217 170.956-65.217 236.174 0 42.661 42.661 57.416 102.661 44.265 157.316"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function() {
+        var toggle = document.querySelector('.mobile-menu-toggle');
+        var nav = document.querySelector('.main-nav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function() {
+                var expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('nav--open');
+            });
+        }
+
+        var video = document.getElementById('heroVideo');
+        var btn = document.getElementById('soundToggle');
+        if (video && btn) {
+            var iconOn = btn.querySelector('.icon-sound-on');
+            var iconOff = btn.querySelector('.icon-sound-off');
+            btn.addEventListener('click', function() {
+                video.muted = !video.muted;
+                iconOn.style.display = video.muted ? 'none' : 'block';
+                iconOff.style.display = video.muted ? 'block' : 'none';
+            });
+        }
+        // WhatsApp Widget Toggle
+        var widget = document.getElementById('joinchat-widget');
+        var floatBtn = document.getElementById('whatsapp-float-btn');
+        var closeBtn = document.querySelector('.joinchat__close');
+
+        if (widget && floatBtn && closeBtn) {
+            setTimeout(function() {
+                widget.classList.add('joinchat__chatbox--show');
+            }, 3000);
+
+            floatBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                widget.classList.toggle('joinchat__chatbox--show');
+            });
+
+            closeBtn.addEventListener('click', function() {
+                widget.classList.remove('joinchat__chatbox--show');
+            });
+        }
+    })();
+    </script>
+</body>
+</html>
