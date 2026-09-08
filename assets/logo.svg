@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- Blue background -->
+  <rect width="240" height="60" rx="4" fill="#406AB2"/>
+  
+  <!-- Yellow shape - top right area -->
+  <path d="M130 8 Q140 2 155 6 Q168 10 165 20 Q162 28 150 26 Q138 24 132 18 Q126 12 130 8Z" fill="#FFDE2D"/>
+  
+  <!-- Green shape - middle -->
+  <path d="M120 18 Q128 12 138 16 Q146 20 144 32 Q142 42 132 44 Q122 46 116 38 Q110 30 114 22 Q116 18 120 18Z" fill="#60BB46"/>
+  
+  <!-- Orange shape - bottom right -->
+  <path d="M150 32 Q158 26 170 30 Q180 34 178 44 Q176 52 166 54 Q156 56 150 48 Q144 40 150 32Z" fill="#F4821F"/>
+</svg>

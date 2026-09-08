@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | مركز العمران للتدريب والتطوير</title>
+    <meta name="description" content="تواصل مع مركز العمران للتدريب والتطوير - نحن هنا للإجابة على جميع أسئلتك ومساعدتك في بدء رحلتك التدريبية. هاتف واتساب وبريد إلكتروني.">
+    <meta property="og:title" content="تواصل معنا | مركز العمران للتدريب والتطوير">
+    <meta property="og:description" content="نحن هنا للإجابة على جميع أسئلتك ومساعدتك في بدء رحلتك التدريبية. تواصل معنا عبر الهاتف أو واتساب أو البريد الإلكتروني.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ========================================
+           PAGE HERO (Contact)
+        ======================================== */
+        .page-hero {
+            padding: clamp(3rem, 8vw, 5rem) 0;
+            background: linear-gradient(135deg, var(--white) 0%, var(--surface-blue) 100%);
+            text-align: center;
+        }
+
+        .page-hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .page-hero-subtitle {
+            font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ========================================
+           QUICK CONTACT ACTIONS
+        ======================================== */
+        .contact-quick-actions {
+            padding: var(--space-3xl) 0;
+            background-color: var(--white);
+        }
+
+        .contact-quick-actions .section-header {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-quick-btns {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .contact-quick-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-lg) var(--space-2xl);
+            background-color: var(--white);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-lg);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: all var(--transition-base);
+            text-decoration: none;
+            min-width: 220px;
+            justify-content: center;
+        }
+
+        .contact-quick-btn:hover {
+            border-color: var(--logo-blue);
+            background-color: var(--surface-blue);
+            color: var(--logo-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-quick-btn--phone {
+            color: var(--logo-blue);
+            border-color: rgba(64, 106, 178, 0.3);
+        }
+
+        .contact-quick-btn--phone:hover {
+            background-color: var(--surface-blue);
+        }
+
+        .contact-quick-btn--whatsapp {
+            color: var(--brand-green-dark);
+            border-color: rgba(96, 187, 70, 0.3);
+        }
+
+        .contact-quick-btn--whatsapp:hover {
+            background-color: var(--surface-green);
+            border-color: var(--logo-green);
+            color: var(--brand-green-dark);
+        }
+
+        .contact-quick-btn--email {
+            color: var(--brand-orange-dark);
+            border-color: rgba(244, 130, 31, 0.3);
+        }
+
+        .contact-quick-btn--email:hover {
+            background-color: var(--surface-orange);
+            border-color: var(--logo-orange);
+            color: var(--brand-orange-dark);
+        }
+
+        .contact-quick-btn svg {
+            flex-shrink: 0;
+        }
+
+        .contact-quick-btn-text {
+            text-align: right;
+        }
+
+        .contact-quick-btn-label {
+            font-size: 0.8125rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .contact-quick-btn-value {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* ========================================
+           CONTACT INFO CARDS
+        ======================================== */
+        .contact-info-section {
+            padding: var(--space-4xl) 0;
+            background-color: var(--background);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .contact-info-card {
+            padding: var(--space-2xl);
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--logo-blue);
+        }
+
+        .contact-info-card-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--surface-blue) 0%, var(--white) 100%);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-lg);
+            color: var(--logo-blue);
+        }
+
+        .contact-info-card-icon--green {
+            background: linear-gradient(135deg, var(--surface-green) 0%, var(--white) 100%);
+            color: var(--logo-green);
+        }
+
+        .contact-info-card-icon--orange {
+            background: linear-gradient(135deg, var(--surface-orange) 0%, var(--white) 100%);
+            color: var(--logo-orange);
+        }
+
+        .contact-info-card-icon--yellow {
+            background: linear-gradient(135deg, rgba(255, 222, 45, 0.1) 0%, var(--white) 100%);
+            color: var(--brand-yellow-dark);
+        }
+
+        .contact-info-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-info-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-info-card a {
+            color: var(--logo-blue);
+            font-weight: 600;
+            transition: color var(--transition-fast);
+        }
+
+        .contact-info-card a:hover {
+            color: var(--brand-blue-dark);
+        }
+
+        .contact-info-card .branches-list {
+            margin-top: var(--space-sm);
+        }
+
+        .contact-info-card .branch-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm) 0;
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .contact-info-card .branch-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info-card .branch-emirate {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ========================================
+           CONTACT FORM SECTION
+        ======================================== */
+        .contact-form-section {
+            padding: var(--space-4xl) 0;
+            background-color: var(--white);
+        }
+
+        .contact-form-section .application-form {
+            padding: 0;
+        }
+
+        .contact-form-section .form-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .contact-form-section .form-field--full {
+            grid-column: 1 / -1;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1.125rem 2rem;
+        }
+
+        /* ========================================
+           FAQ SECTION
+        ======================================== */
+        .faq-section {
+            padding: var(--space-4xl) 0;
+            background-color: var(--background);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .faq-item:hover {
+            border-color: var(--logo-blue);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: var(--space-xl) var(--space-2xl);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-heading);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: right;
+            transition: color var(--transition-fast);
+        }
+
+        .faq-question:hover {
+            color: var(--logo-blue);
+        }
+
+        .faq-question svg {
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-question svg {
+            transform: rotate(180deg);
+            color: var(--logo-blue);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-slow), padding var(--transition-slow);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 var(--space-2xl) var(--space-xl);
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* ========================================
+           FINAL CTA
+        ======================================== */
+        .final-cta {
+            padding: var(--space-4xl) 0;
+            background: linear-gradient(135deg, var(--brand-blue-deep) 0%, var(--logo-blue) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta-title {
+            font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .final-cta-text {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-2xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -25%;
+            width: 150%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        /* ========================================
+           FOOTER EXTRAS
+        ======================================== */
+        .footer-tagline {
+            font-size: 0.9375rem;
+            opacity: 0.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 0.9375rem;
+            opacity: 0.8;
+            transition: opacity var(--transition-fast);
+        }
+
+        .footer-contact-item:hover {
+            opacity: 1;
+        }
+
+        .footer-contact-item svg {
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            color: var(--white);
+            transition: all var(--transition-fast);
+        }
+
+        .footer-social a:hover {
+            background: var(--logo-blue);
+            transform: translateY(-2px);
+        }
+
+        .footer-nav-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-lg);
+            color: var(--white);
+        }
+
+        .footer-made-in {
+            margin-top: var(--space-sm);
+            opacity: 0.35;
+            font-size: 0.8125rem;
+        }
+
+        /* ========================================
+           WHATSAPP FLOAT
+        ======================================== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 90;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition-base);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ========================================
+           RESPONSIVE (Contact page)
+        ======================================== */
+        @media (max-width: 768px) {
+            .contact-quick-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-quick-btn {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-section .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .final-cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .final-cta-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+                padding: var(--space-lg) var(--space-xl);
+            }
+
+            .faq-answer-inner {
+                padding: 0 var(--space-xl) var(--space-lg);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-quick-btn {
+                min-width: auto;
+                padding: var(--space-md) var(--space-lg);
+            }
+
+            .faq-question {
+                font-size: 0.9375rem;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        (function() {
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "tel:+971 50 553 2260";
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="مركز العمران للتدريب والتطوير">
+                <img src="assets/omran-full-logo.png" alt="شعار مركز العمران للتدريب والتطوير" width="240" height="60">
+            </a>
+            <nav class="main-nav" aria-label="التنقل الرئيسي">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن</a></li>
+                    <li><a href="courses.html" class="nav-link">الدورات</a></li>
+                    <li><a href="branches.html" class="nav-link">الفروع</a></li>
+                    <li><a href="initiative.html" class="nav-link">مبادرة المرأة</a></li>
+                    <li><a href="blog.html" class="nav-link">المدونة</a></li>
+                    <li><a href="careers.html" class="nav-link">الوظائف</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--active nav-cta">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================
+             PAGE HERO
+        ========================================= -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero-title">تواصل معنا</h1>
+                <p class="page-hero-subtitle">نحن هنا للإجابة على جميع أسئلتك ومساعدتك في بدء رحلتك التدريبية</p>
+            </div>
+        </section>
+
+        <!-- ========================================
+             QUICK CONTACT ACTIONS
+        ========================================= -->
+        <section class="contact-quick-actions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">طريقة التواصل المفضلة لديك</h2>
+                    <p class="section-subtitle">اختر الطريقة التي تناسبك للتواصل معنا مباشرة</p>
+                </div>
+                <div class="contact-quick-btns">
+                    <a href="tel:+971505829697" class="contact-quick-btn contact-quick-btn--phone">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div class="contact-quick-btn-text">
+                            <span class="contact-quick-btn-label">الهاتف</span>
+                            <span class="contact-quick-btn-value" dir="ltr">+971505829697</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/971505829697?text=مرحباً، أود الاستفسار عن الدورات التدريبية" class="contact-quick-btn contact-quick-btn--whatsapp" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <div class="contact-quick-btn-text">
+                            <span class="contact-quick-btn-label">واتساب</span>
+                            <span class="contact-quick-btn-value" dir="ltr">+971505829697</span>
+                        </div>
+                    </a>
+                    <a href="mailto:alomran.td@gmail.com" class="contact-quick-btn contact-quick-btn--email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div class="contact-quick-btn-text">
+                            <span class="contact-quick-btn-label">البريد الإلكتروني</span>
+                            <span class="contact-quick-btn-value">alomran.td@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACT INFO CARDS
+        ========================================= -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">معلومات التواصل</h2>
+                    <p class="section-subtitle">يمكنك التواصل معنا مباشرة أو زيارتنا في أي من فروعنا</p>
+                </div>
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-info-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <h3>الهاتف</h3>
+                        <p>تواصل معنا مباشرة عبر الهاتف في أوقات الدوام</p>
+                        <a href="tel:+971505829697" dir="ltr">+971505829697</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-card-icon contact-info-card-icon--green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>أرسل لنا استفسارك وسنرد خلال 24 ساعة</p>
+                        <a href="mailto:alomran.td@gmail.com">alomran.td@gmail.com</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-card-icon contact-info-card-icon--orange">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </div>
+                        <h3>واتساب</h3>
+                        <p>راسلنا عبر واتساب للحصول على رد سريع</p>
+                        <a href="https://wa.me/971505829697?text=مرحباً، أود الاستفسار عن الدورات التدريبية" target="_blank" rel="noopener">ابدأ المحادثة على واتساب</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-card-icon contact-info-card-icon--yellow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <h3>مواقعنا</h3>
+                        <p>قم بزيارة أي من فروعنا المتعددة في جميع أنحاء الإمارات</p>
+                        <div class="branches-list">
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">العين:</span> المربى، مزيد مول، البراري مول، الفوعة، الياهر</span>
+                            </div>
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">أبوظبي:</span> مزيد مول، شارع المرور</span>
+                            </div>
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">دبي:</span> القرهود، البرشا</span>
+                            </div>
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">الشارقة:</span> سنترال مول</span>
+                            </div>
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">رأس الخيمة:</span> راك مول</span>
+                            </div>
+                            <div class="branch-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span><span class="branch-emirate">الفجيرة</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACT FORM
+        ========================================= -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="application-form">
+                    <div class="section-header">
+                        <h2 class="section-header__title">أرسل لنا رسالة</h2>
+                        <p class="section-header__subtitle">املئي النموذج أدناه وسيتواصل معك فريقنا في أقرب وقت</p>
+                    </div>
+                    <form class="application-form__form" id="contactForm" action="#" method="post">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="fullName" class="form-field__label">الاسم الكامل</label>
+                                <input type="text" id="fullName" name="fullName" class="form-field__input" placeholder="أدخل اسمك الكامل" required autocomplete="name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email" class="form-field__label">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="form-field__input" placeholder="example@email.com" required autocomplete="email" dir="ltr">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone" class="form-field__label">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" class="form-field__input" placeholder="+971 50 582 9697" required autocomplete="tel" dir="ltr">
+                            </div>
+                            <div class="form-field">
+                                <label for="subject" class="form-field__label">الموضوع</label>
+                                <select id="subject" name="subject" class="form-field__select" required>
+                                    <option value="" disabled selected>اختر الموضوع</option>
+                                    <option value="استفسار عن دورة">استفسار عن دورة</option>
+                                    <option value="تسجيل دورة">تسجيل دورة</option>
+                                    <option value="استفسار عن شهادة">استفسار عن شهادة</option>
+                                    <option value="استفسار عن الأسعار">استفسار عن الأسعار</option>
+                                    <option value="شكوى">شكوى</option>
+                                    <option value="اقتراح">اقتراح</option>
+                                    <option value="أخرى">أخرى</option>
+                                </select>
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="branch" class="form-field__label">الفرع</label>
+                                <select id="branch" name="branch" class="form-field__select" required>
+                                    <option value="" disabled selected>اختر الفرع</option>
+                                    <optgroup label="العين">
+                                        <option value="المربى - العين">المربى</option>
+                                        <option value="مزيد مول - العين">مزيد مول</option>
+                                        <option value="البراري مول - العين">البراري مول</option>
+                                        <option value="الفوعة - العين">الفوعة</option>
+                                        <option value="الياهر - العين">الياهر</option>
+                                    </optgroup>
+                                    <optgroup label="أبوظبي">
+                                        <option value="مزيد مول - أبوظبي">مزيد مول</option>
+                                        <option value="شارع المرور - أبوظبي">شارع المرور</option>
+                                    </optgroup>
+                                    <optgroup label="دبي">
+                                        <option value="القرهود - دبي">القرهود</option>
+                                        <option value="البرشا - دبي">البرشا</option>
+                                    </optgroup>
+                                    <optgroup label="الشارقة">
+                                        <option value="سنترال مول - الشارقة">سنترال مول</option>
+                                    </optgroup>
+                                    <optgroup label="رأس الخيمة">
+                                        <option value="راك مول - رأس الخيمة">راك مول</option>
+                                    </optgroup>
+                                    <optgroup label="الفجيرة">
+                                        <option value="الفجيرة">الفجيرة</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="message" class="form-field__label">الرسالة</label>
+                                <textarea id="message" name="message" class="form-field__textarea" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large btn-submit">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FAQ SECTION
+        ========================================= -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">الأسئلة الشائعة</h2>
+                    <p class="section-subtitle">إجابات على أكثر الاستفسارات تكراراً</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>كيف يمكنني التسجيل في دورة تدريبية؟</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                يمكنك التسجيل في أي من دوراتنا التدريبية من خلال عدة طرق: التواصل معنا عبر الهاتف أو واتساب على الرقم +971505829697، أو إرسال بريد إلكتروني إلى alomran.td@gmail.com، أو زيارة أي من فروعنا可以直接. كما يمكنك ملء نموذج التواصل أعلاه وسيتواصل معك فريقنا لمساعدتك في اختيار الدورة المناسبة واستكمال إجراءات التسجيل.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>هل الشهادات معتمدة؟</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                نعم، جميع شهاداتنا معتمدة محلياً ودولياً. مركز العمران للتدريب والتطوير معتمد من الجهات الرسمية في دولة الإمارات العربية المتحدة، ونقدم شهادات معترف بها تساعدك في تطوير مسيرتك المهنية وتعزيز فرصك في سوق العمل.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>ما هي مدة الدورات التدريبية؟</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                تختلف مدة الدورات التدريبية حسب نوع البرنامج والمجال. بعض الدورات قصيرة تستمر يوماً أو يومين، بينما تستمر دورات أخرى لأسابيع أو أشهر. نوفر لك جميع المعلومات عن مدة كل دورة في صفحة الدورات التدريبية. يمكنك التواصل معنا لمعرفة التفاصيل الكاملة عن الدورة التي تهمك.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>هل تقدمون تدريباً للشركات؟</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                نعم، نقدم برامج تدريبية مخصصة للشركات والمؤسسات الحكومية والخاصة. نعمل مع أكثر من 25 جهة حكومية ونقدم حلولاً تدريبية مصممة خصيصاً لاحتياجات مؤسستك. تواصل معنا لمناقشة متطلبات تدريب موظفيك وسنقوم بتصميم برنامج تدريبي يناسب أهدافكم.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FINAL CTA
+        ========================================= -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="final-cta-content">
+                    <h2 class="final-cta-title">جاهز لبدء رحلتك التدريبية؟</h2>
+                    <p class="final-cta-text">تواصل معنا الآن ودعنا نساعدك في اختيار الدورة المثالية لتطوير مهاراتك وتحقيق أهدافك المهنية</p>
+                    <div class="final-cta-actions">
+                        <a href="https://wa.me/971505829697?text=مرحباً، أريد الاستفسار عن الدورات التدريبية" class="btn btn-whatsapp btn-large" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            واتساب مباشر
+                        </a>
+                        <a href="tel:+971505829697" class="btn btn-secondary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            اتصل بنا
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/omran-full-logo.png" alt="مركز العمران للتدريب والتطوير" width="240" height="60">
+                    <p class="footer-name">مركز العمران للتدريب والتطوير</p>
+                    <p class="footer-tagline">نصنع قادة الغد منذ 2010</p>
+                    <div class="footer-contact">
+                        <a href="tel:+971505829697" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +971505829697
+                        </a>
+                        <a href="mailto:alomran.td@gmail.com" class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            alomran.td@gmail.com
+                        </a>
+                        <p class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            السبت - الخميس: 8:00 ص - 8:00 م
+                        </p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/alomran.td/" target="_blank" rel="noopener" aria-label="فيسبوك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://www.instagram.com/alomran.td/" target="_blank" rel="noopener" aria-label="انستغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://www.tiktok.com/@alomran.td" target="_blank" rel="noopener" aria-label="تيك توك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9a6.34 6.34 0 1 0 5.45 6.28V9.13a8.16 8.16 0 0 0 4.77 1.52V7.2a4.85 4.85 0 0 1-.7-.51z"/></svg></a>
+                        <a href="https://wa.me/971505829697" target="_blank" rel="noopener" aria-label="واتساب"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="تنقل التذييل">
+                    <h4 class="footer-nav-title">دوراتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="courses.html#teachers">التدريب المهني</a></li>
+                        <li><a href="courses.html#languages">تعلم اللغات</a></li>
+                        <li><a href="courses.html#it">تقنية المعلومات</a></li>
+                        <li><a href="courses.html#business">إدارة الأعمال</a></li>
+                        <li><a href="courses.html#marketing">التسويق الرقمي</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="روابط سريعة">
+                    <h4 class="footer-nav-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="branches.html">الفروع</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 مركز العمران للتدريب والتطوير. جميع الحقوق محفوظة.</p>
+                <p class="footer-made-in">صُنع بـ في الإمارات العربية المتحدة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         FLOATING WHATSAPP BUTTON
+    ========================================= -->
+    <a href="https://wa.me/971505829697?text=مرحباً، أود الاستفسار عن الدورات التدريبية" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Mobile Menu Script -->
+    <script>
+    (function() {
+        var toggle = document.querySelector('.mobile-menu-toggle');
+        var nav = document.querySelector('.main-nav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function() {
+                var expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('nav--open');
+            });
+        }
+    })();
+    </script>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+    (function() {
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            var question = item.querySelector('.faq-question');
+            question.addEventListener('click', function() {
+                var isActive = item.classList.contains('active');
+                // Close all other items
+                faqItems.forEach(function(other) {
+                    other.classList.remove('active');
+                    other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
