@@ -1,0 +1,5 @@
+# Redirect old blog slugs
+# The CMS automatically creates 301 redirects when slugs change.
+# If your existing website uses different URL patterns, add redirects here.
+# Example:
+# Redirect 301 /old-blog-path https://alomran.ae/blog/new-slug
