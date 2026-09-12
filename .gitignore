@@ -1,0 +1,11 @@
+admin/cache/
+database/cms.sqlite
+uploads/articles/*
+uploads/og/*
+uploads/thumbnails/*
+!uploads/articles/.htaccess
+!uploads/og/.htaccess
+!uploads/thumbnails/.htaccess
+uploads/.htaccess
+.DS_Store
+*.log
